@@ -1,2 +1,2 @@
 # Pet-Projects
-This repo contains small projects
+This repo contains pet projects
