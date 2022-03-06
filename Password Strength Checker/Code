@@ -58,6 +58,27 @@ def printInput():
     lbl.config(text = "Password Strength: "+pwdstrng)
 
 
+def gen_uppc_lowc_in_str():
+    """Converts the alphabets' cases to uppercase and lowercase randomly to make the
+    password more secure."""
+    s = str(inputtxt.get(1.0, "end-1c"))
+    import numpy as np
+    assert type(s) == str, "data type of s is not str"
+    data = list(s)
+    # np.random.seed(42)
+    l = len(s)
+    uppc_ind = np.unique(np.random.choice(np.arange(l), size=l//2))
+    lowc_ind = np.array([i for i in np.arange(l) if i not in uppc_ind])
+    for i in range(l):
+        if i in uppc_ind and data[i].isalpha():
+            data[i] = data[i].upper()
+        elif i in lowc_ind and data[i].isalpha():
+            data[i] = data[i].lower()
+    more_secure_s = ''.join(data)
+    lbl.config(text = "More secure password (hopefully!): "+more_secure_s)
+    
+
+
 # TextBox Creation
 inputtxt = tk.Text(frame, height=5, width=20)
 inputtxt.pack()
@@ -69,6 +90,15 @@ printButton.pack()
 # Label Creation
 lbl = tk.Label(frame, text = "")
 lbl.pack()
+
+# More Secure Password button Creation
+mspButton = tk.Button(frame, text="More Secure Password", command=gen_uppc_lowc_in_str)
+mspButton.pack()
+
+# Label2 Creation
+lbl2 = tk.Label(frame, text = "")
+lbl2.pack()
+
 
 # Exit button creation
 exitButton = tk.Button(frame, text="Quit", command=frame.destroy)
