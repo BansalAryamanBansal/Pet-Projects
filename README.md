@@ -3,7 +3,7 @@ This repo contains my pet projects. You might see a decent web interface (Stream
 
 **For beginners:**
 
-To clone (download) my github repositories, open the terminal, and type:
+To clone (download) all my pet projects, open the terminal, and type:
 
 `git clone "https://github.com/BansalAryamanBansal/Pet-Projects".git`
 
