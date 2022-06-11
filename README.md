@@ -7,7 +7,7 @@ To clone (download) all my pet projects, open the terminal, and type:
 
 `git clone "https://github.com/BansalAryamanBansal/Pet-Projects".git`
 
-This will download all the pet projects on your computer. To download specific ones, navigate to their respective folders, copy the url, and paste it inside double quotes. 
+This will download all my pet projects on your computer. To download specific ones, navigate to their respective folders, copy the url, and paste it inside the double quotes. 
 
 For example, to download the Digit Recognizer project, open the terminal and type:
 
