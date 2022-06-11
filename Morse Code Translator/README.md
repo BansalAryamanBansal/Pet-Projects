@@ -3,7 +3,8 @@
 This translates morse code to english and vice versa.
 
 To run the newer version (MORSE_CODE_TRANSLATOR), open the terminal, type:
-streamlit run Morse_code_ui.py
+
+`streamlit run Morse_code_ui.py`
 
 This will open the web interface of the translator. 
 
