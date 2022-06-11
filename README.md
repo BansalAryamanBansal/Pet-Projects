@@ -15,4 +15,4 @@ For example, to download the Digit Recognizer project, open the terminal and typ
 
 And voila! The project will be downloaded on your computer.
 
-Note: I'm using Linux Ubuntu, so this might not work for Windows.
+Note: I'm using Linux Ubuntu, so this might not work on Windows.
