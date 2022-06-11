@@ -2,7 +2,7 @@
 
 This translates morse code to english and vice versa.
 
-To run the newer version (MORSE_CODE_TRANSLATOR), open the terminal, type:
+To run the newer version (`MORSE_CODE_TRANSLATOR.py`), open the terminal, type:
 
 `streamlit run Morse_code_ui.py`
 
